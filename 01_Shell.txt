@@ -1,0 +1,9 @@
+1) Bash script to check running process
+=======================================
+# ps aux | less
+
+
+
+2) Find and replace text
+=======================================
+$ sed -i 's/Mango/Apple/gI' 1.txt

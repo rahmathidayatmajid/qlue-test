@@ -1,0 +1,23 @@
+1) query select: name; total_price
+
+SELECT name FROM persons,
+transactions WHERE total = transactions.total;
+
+----------------------------------------------------------------------------------------------------------
+
+
+2) Provide a query select statement to return the transaction complete with name of person, and name
+of item between January 1st, 2020 and June 25th, 2020.
+
+SELECT name FROM persons,
+transactions WHERE items BETWEEN Date >= '2020/01/01' and Date <= '2020/06/25'
+
+----------------------------------------------------------------------------------------------------------
+
+
+3) Provide a query select statement to return a list of the name of the person who made transactions
+based on the total variety of items purchased, sorted from the most to the fewest.
+
+SELECT name FROM persons,
+transactions WHERE items_id = transactions.items_id
+ORDER BY DESC;
