@@ -11,12 +11,14 @@ getShape(9); ⇒ STAR
  */
 
 function getShape(n) {
+    let res = 0;
+
     for (var i = 1; i <= n; i++) {
-        if (i % 3 === 0 && i % 7 === 0) {
+        if (i % 2 === 0 && i % 3 === 0) {
             console.log('null');
-        } else if (i % 3 === 0) {
+        } else if (i % 2 === 0) {
             console.log('CIRCLE STAR');
-        } else if (i % 7 === 0) {
+        } else if (i % 3 === 0) {
             console.log('STAR');
         } else {
             console.log(i);
